@@ -3,80 +3,614 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Golden Fork Restaurant</title>
+    <title>Golden Fork Restaurant | Fine Dining Since 1996</title>
+    <meta name="description" content="Experience the art of fine dining at Golden Fork Restaurant. Exquisite cuisine, elegant ambiance, and exceptional service since 1996." />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/index.js"></script>
-
     <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..600;1,400..600&amp;family=Poppins:wght@400;500;600&amp;family=Volkhov:wght@400;500;600&amp;family=Italianno:wght@400;500;600&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@300;400;500;600&family=Italianno&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
 
   <body>
-    <header class="header">
-      <ul class="logo">
-        <li>Golden Fork</li>
-        <li class="est">est 1996</li>
-      </ul>
-      <ul class="nav-links">
-        <li>Menu</li>
-        <li>Order Now</li>
-        <li>Gallery</li>
-        <li>Services</li>
-        <li>Story</li>
-        <button>Book Now</button>
-      </ul>
+    <!-- Header -->
+    <header class="header" id="header">
+      <a href="#hero" class="logo">
+        <span class="logo-text">Golden Fork</span>
+        <span class="logo-est">est 1996</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reservations">Reservations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#reservations" class="btn btn-outline-light">Book a Table</a>
+      </nav>
+
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </header>
 
-    <div class="hero" id="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
       <img
-        src="https://images.squarespace-cdn.com/content/v1/5854c249bebafb497fb1865e/1612938105738-U4TDF9X3W90L66W1855P/IMG_76261603601447180.jpg?format=2500w"
-        alt="Golden Fork Restaurant"
+        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070"
+        alt="Golden Fork Restaurant Interior"
+        class="hero-img"
       />
       <div class="hero-content">
-        <h1>Golden Fork</h1>
-        <p>Experience the art of fine dining since 1996</p>
-        <button class="cta-button">Reserve Your Table</button>
+        <p class="hero-subtitle">Welcome to</p>
+        <h1 class="hero-title">Golden Fork</h1>
+        <p class="hero-tagline">Experience the Art of Fine Dining Since 1996</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#reservations" class="btn btn-outline-light">Reserve Your Table</a>
+        </div>
       </div>
-    </div>
+      <a href="#about" class="scroll-indicator">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
 
-    <main>
-      <section class="welcome-section">
-        <h1>Welcome to Golden Fork</h1>
-        <p>
-          Experience the finest dining with our exquisite menu crafted by
-          world-class chefs. At Golden Fork, we blend tradition with innovation
-          to bring you a culinary journey like no other.
-        </p>
-        <button>Explore Our Menu</button>
-      </section>
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070"
+              alt="Fine Dining Experience"
+            />
+            <div class="experience-badge">
+              <span class="years">30</span>
+              <span class="text">Years of Excellence</span>
+            </div>
+          </div>
+          <div class="about-content reveal">
+            <span class="section-label">Our Story</span>
+            <h2 class="section-title">A Legacy of Culinary Excellence</h2>
+            <p>
+              Founded in 1996, Golden Fork has been a beacon of fine dining excellence for over three decades. 
+              Our passion for quality ingredients and timeless recipes has made us a beloved destination for 
+              food enthusiasts from around the world.
+            </p>
+            <p>
+              Every dish tells a story of tradition, crafted with the finest locally-sourced ingredients 
+              and prepared by our world-class chefs who bring decades of experience to your table.
+            </p>
+            <div class="about-features">
+              <div class="feature">
+                <i class="fas fa-award"></i>
+                <div>
+                  <h4>Award Winning</h4>
+                  <p>Michelin Star Excellence</p>
+                </div>
+              </div>
+              <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <div>
+                  <h4>Fresh Ingredients</h4>
+                  <p>Locally Sourced Daily</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="welcome-section">
-        <h1>Our Story</h1>
-        <p>
-          Founded in 1996, Golden Fork has been serving exceptional cuisine
-          for over two decades. Our passion for quality ingredients and
-          timeless recipes has made us a beloved destination for food
-          enthusiasts from around the world.
-        </p>
-        <button>Learn More</button>
-      </section>
+    <!-- Highlights Section -->
+    <section class="section highlights-section">
+      <div class="container">
+        <div class="highlights-grid">
+          <div class="highlight-card reveal">
+            <div class="highlight-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Exquisite Cuisine</h3>
+            <p>Innovative dishes that blend classic techniques with modern flavors.</p>
+          </div>
+          <div class="highlight-card reveal">
+            <div class="highlight-icon">
+              <i class="fas fa-wine-glass-alt"></i>
+            </div>
+            <h3>Premium Wines</h3>
+            <p>Curated selection from the world's finest vineyards.</p>
+          </div>
+          <div class="highlight-card reveal">
+            <div class="highlight-icon">
+              <i class="fas fa-concierge-bell"></i>
+            </div>
+            <h3>Impeccable Service</h3>
+            <p>Attentive staff dedicated to your dining experience.</p>
+          </div>
+          <div class="highlight-card reveal">
+            <div class="highlight-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3>Elegant Ambiance</h3>
+            <p>Sophisticated setting for memorable occasions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="welcome-section">
-        <h1>Exceptional Service</h1>
-        <p>
-          Our dedicated team of professionals is committed to providing you
-          with an unforgettable dining experience. From the moment you step
-          through our doors, you'll be treated with the utmost care and
-          attention to detail.
-        </p>
-        <button>Contact Us</button>
-      </section>
-    </main>
+    <!-- Menu Section -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Menu</span>
+          <h2 class="section-title">Culinary Masterpieces</h2>
+          <p class="section-desc">Discover our chef's carefully crafted selections</p>
+        </div>
 
-    <footer>
-      <p>&copy; 2024 Golden Fork Restaurant. All rights reserved.</p>
+        <div class="menu-categories">
+          <button class="menu-tab active" data-category="starters">Starters</button>
+          <button class="menu-tab" data-category="mains">Main Courses</button>
+          <button class="menu-tab" data-category="desserts">Desserts</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <!-- Starters -->
+          <div class="menu-item reveal" data-category="starters">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?q=80&w=500" alt="Truffle Soup" />
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Black Truffle Soup</h3>
+                <span class="price">$28</span>
+              </div>
+              <p>Velvety mushroom soup infused with black truffle essence, topped with herb croutons</p>
+            </div>
+          </div>
+
+          <div class="menu-item reveal" data-category="starters">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?q=80&w=500" alt="Tuna Tartare" />
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Tuna Tartare</h3>
+                <span class="price">$32</span>
+              </div>
+              <p>Fresh yellowfin tuna, avocado mousse, sesame crisp, ponzu dressing</p>
+            </div>
+          </div>
+
+          <div class="menu-item reveal" data-category="starters">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?q=80&w=500" alt="Burrata" />
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Burrata Caprese</h3>
+                <span class="price">$24</span>
+              </div>
+              <p>Creamy burrata, heirloom tomatoes, basil pesto, aged balsamic reduction</p>
+            </div>
+          </div>
+
+          <!-- Main Courses -->
+          <div class="menu-item reveal" data-category="mains" style="display: none;">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=500" alt="Wagyu Steak" />
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>A5 Wagyu Ribeye</h3>
+                <span class="price">$95</span>
+              </div>
+              <p>Japanese A5 wagyu, truffle jus, roasted bone marrow, seasonal vegetables</p>
+            </div>
+          </div>
+
+          <div class="menu-item reveal" data-category="mains" style="display: none;">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=500" alt="Salmon" />
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Pan-Seared Salmon</h3>
+                <span class="price">$48</span>
+              </div>
+              <p>Norwegian salmon, lemon beurre blanc, asparagus, fingerling potatoes</p>
+            </div>
+          </div>
+
+          <div class="menu-item reveal" data-category="mains" style="display: none;">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=500" alt="Duck" />
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Roasted Duck Breast</h3>
+                <span class="price">$56</span>
+              </div>
+              <p>Cherry glaze, duck fat potatoes, wilted greens, port wine reduction</p>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div class="menu-item reveal" data-category="desserts" style="display: none;">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=500" alt="Chocolate" />
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Chocolate Fondant</h3>
+                <span class="price">$18</span>
+              </div>
+              <p>Warm chocolate cake, molten center, vanilla bean ice cream, gold leaf</p>
+            </div>
+          </div>
+
+          <div class="menu-item reveal" data-category="desserts" style="display: none;">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=500" alt="Crème Brûlée" />
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Vanilla Crème Brûlée</h3>
+                <span class="price">$16</span>
+              </div>
+              <p>Tahitian vanilla custard, caramelized sugar crust, fresh berries</p>
+            </div>
+          </div>
+
+          <div class="menu-item reveal" data-category="desserts" style="display: none;">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98c038218?q=80&w=500" alt="Tiramisu" />
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Classic Tiramisu</h3>
+                <span class="price">$15</span>
+              </div>
+              <p>Espresso-soaked ladyfingers, mascarpone cream, cocoa dusting</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-cta reveal">
+          <a href="#" class="btn btn-primary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Gallery</span>
+          <h2 class="section-title">A Feast for the Eyes</h2>
+          <p class="section-desc">Glimpses of our culinary artistry and elegant ambiance</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item-large reveal">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1000" alt="Restaurant Interior" />
+            <div class="gallery-overlay">
+              <span>Elegant Dining</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=600" alt="Gourmet Dish" />
+            <div class="gallery-overlay">
+              <span>Culinary Art</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=600" alt="Wine Selection" />
+            <div class="gallery-overlay">
+              <span>Fine Wines</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=600" alt="Steak Dish" />
+            <div class="gallery-overlay">
+              <span>Prime Cuts</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=600" alt="Chef at Work" />
+            <div class="gallery-overlay">
+              <span>Our Chefs</span>
+            </div>
+          </div>
+          <div class="gallery-item gallery-item-wide reveal">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=1000" alt="Private Dining" />
+            <div class="gallery-overlay">
+              <span>Private Events</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-title">What Our Guests Say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "An absolutely magical dining experience. The Wagyu was cooked to perfection and 
+              the service was impeccable. A true gem of fine dining."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100" alt="James K." />
+              <div>
+                <h4>James K.</h4>
+                <span>Food Critic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "We celebrated our anniversary here and it was beyond our expectations. 
+              The ambiance, food, and attention to detail made it unforgettable."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100" alt="Sarah M." />
+              <div>
+                <h4>Sarah M.</h4>
+                <span>Regular Guest</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "The tasting menu was a journey through culinary excellence. Each course 
+              was a masterpiece. This is dining at its finest."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100" alt="Michael R." />
+              <div>
+                <h4>Michael R.</h4>
+                <span>Executive Chef</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="section reservation-section" id="reservations">
+      <div class="reservation-bg"></div>
+      <div class="container">
+        <div class="reservation-wrapper">
+          <div class="reservation-info reveal">
+            <span class="section-label">Reservations</span>
+            <h2 class="section-title">Book Your Experience</h2>
+            <p>
+              Join us for an unforgettable dining experience. Reserve your table today 
+              and let us create magical moments for you and your guests.
+            </p>
+            <div class="reservation-details">
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Opening Hours</h4>
+                  <p>Mon - Thu: 5:00 PM - 10:00 PM</p>
+                  <p>Fri - Sun: 5:00 PM - 11:00 PM</p>
+                </div>
+              </div>
+              <div class="detail">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Call Us</h4>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>123 Gourmet Avenue</p>
+                  <p>New York, NY 10001</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="reservation-form reveal" id="reservation-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required />
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select Guests</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6+ Guests</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <select id="time" name="time" required>
+                  <option value="">Select Time</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Special Requests</label>
+              <textarea id="message" name="message" rows="3" placeholder="Any dietary restrictions or special occasions?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Request Reservation</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-label">Contact Us</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@goldenfork.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Gourmet Avenue, New York, NY 10001</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-map reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076904379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+              width="100%"
+              height="400"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              title="Golden Fork Location"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#hero" class="footer-logo">
+              <span class="logo-text">Golden Fork</span>
+              <span class="logo-est">est 1996</span>
+            </a>
+            <p>Experience the art of fine dining. Where tradition meets innovation in every dish.</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#menu">Our Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#reservations">Reservations</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-hours">
+            <h4>Opening Hours</h4>
+            <ul>
+              <li><span>Monday - Thursday</span><span>5:00 PM - 10:00 PM</span></li>
+              <li><span>Friday - Saturday</span><span>5:00 PM - 11:00 PM</span></li>
+              <li><span>Sunday</span><span>5:00 PM - 10:00 PM</span></li>
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to receive updates and exclusive offers.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Golden Fork Restaurant. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
